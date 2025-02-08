@@ -43,46 +43,91 @@ body {
   color: #555;
 }
 
-.karton .cta-btn {
-  background-color: #ff6e40;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
+.ssyklo {
+  text-decoration: none;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #8d8d8d;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.card {
+  padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.karton .cta-btn:hover {
-  background-color: #ff4e20;
-}
-
-.karton {
-  border: 3px solid transparent;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  background: #f4f4f4;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: border 0.3s, box-shadow 0.3s;
-}
-/* .autsim {
-  overflow: hidden;
+.card__image {
+  aspect-ratio: 16 / 9;
+  width: 100%;
   object-fit: cover;
-} */
+}
 
-.karton:hover {
-  border-image-source: linear-gradient(45deg, #f39c12, #8e44ad);
-  border-image-slice: 1;
-  box-shadow: 0 0 15px rgba(241, 196, 15, 0.7);
+.card__content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  background: whitesmoke;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  will-change: transform;
+  transition: transform 0.25s ease-out;
+}
+
+.card__title {
+  color: hsl(201, 14%, 20%);
+  font-size: 20px;
+  padding: 10px 14px 5px;
+  margin: 0;
+}
+
+.card__description {
+  margin: 0;
+  padding: 0 14px 10px;
+  font-size: 14px;
+  color: hsl(201, 14%, 40%);
+  text-align: left;
+}
+
+.card__gloss {
+  opacity: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  will-change: opacity;
+}
+
+.card__gloss.card__gloss--animatable {
+  transition: 0.25s opacity ease-out;
 }
 
 .blyat {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 13rem;
 }
 
 .blyat .karton {
@@ -137,6 +182,15 @@ body {
   color: #f39c12;  
   transform: scale(1.1);  
 }  
+
+.AAAA {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.helpme{
+
+}
 
 .footer-social .social-icon i { 
   font-size: 24px; 

@@ -6,12 +6,12 @@
     <title>News Aggregator</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="import" href="/html/alex.html">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
 <body>
     <header class="header">
         <div class="logo">McFly &#38; Emmets</div>
+        <div id="google_translate_element"></div>
     </header>
     <main class="main">
         <section class="saebal">
@@ -19,18 +19,30 @@
             <p>Read all fresh news in one page.</p>
         </section>
         <section class="blyat">
-            <div class="karton">
-                <!-- <img class="autism" src="/pictures/pexels-pixabay-221210.jpg" alt="sport">  -->
-                <h2>Sport News</h2>
-                <p>Read fresh news about Sport.</p>
-                <button class="cta-btn" id="myButton" target="_blank">Read more</button>
-            </div>
-            <div class="karton">
-                <!-- <img class="autism" src="/pictures/pexels-tima-miroshnichenko-7991579.jpg" alt="movie"> -->
-                <h2>Movies News</h2>
-                <p>Read fresh news about Movies.</p>
-                <button class="cta-btn">Read more</button>
-            </div>
+                <a class="ssyklo" href="/html/alex.html" target="_blank">
+                <div class="card">
+                    <div class="card__content">
+                      <div class="card__gloss"></div>
+                      <img class="card__image" src="/pictures/pexels-pixabay-221210.jpg" alt=""/>
+                      <h2 class="card__title">Sport News</h2>
+                      <p class="card__description">
+                        Read fresh news about Sport.
+                      </p>
+                    </div>
+                  </div>
+                </a>                
+                <a class="ssyklo" href="/html/movies.html" target="_blank">
+                    <div class="card">
+                        <div class="card__content">
+                          <div class="card__gloss"></div>
+                          <img class="card__image" src="/pictures/pexels-tima-miroshnichenko-7991579.jpg" alt=""/>
+                          <h2 class="card__title">Movies News</h2>
+                          <p class="card__description">
+                            Read fresh news about Movies.
+                          </p>
+                        </div>
+                    </div>
+                </a>
         </section>
     </main>
     <footer class="footer"> 
@@ -38,24 +50,22 @@
              
              
             <div class="footer-logo" title="Go to the homepage"> 
-                <img src="logo.png" alt="Sports News"> 
+                <span class="AAAA">I dont have Idea</span>
             </div> 
      
              
-            <div class="footer-links" title="Navigate through different sports categories"> 
-                <ul> 
-                    <li><a href="#" title="Visit the homepage">Home</a></li> 
-                    <li><a href="#" title="Check out football news">Football</a></li> 
-                    <li><a href="#" title="Explore tennis news">Tennis</a></li> 
-                    <li><a href="#" title="Read basketball updates">Basketball</a></li> 
-                    <li><a href="#" title="Stay up to date with hockey">Hockey</a></li> 
-                    <li><a href="#" title="Contact us for more information">Contact</a></li> 
+            <div class="footer-links" title=""> 
+                <ul> <span class="AAAA">Resources</span>
+                    <li><a href="https://newsapi.org" title="" target="_blank" class="helpme">Sports Api</a></li> 
+                    <li><a href="https://developer.themoviedb.org/reference/intro/getting-started" title="" target="_blank" class="helpme">Movies Api</a></li> 
+                    <li><a href="/html/team.html" title="" target="_blank" class="helpme">Our Team</a></li>  
+                    <li><a href="https://www.w3schools.com/howto/howto_google_translate.asp" title="" target="_blank" class="helpme">W3Schools</a></li> 
                 </ul> 
             </div> 
      
             
             <div class="footer-social" title="Follow us on social media"> 
-                <ul> 
+                <ul> <span class="AAAA">Extra Info</span>
                     <li><a href="https://www.facebook.com/yourprofile" target="_blank" class="social-icon" title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a></li> 
                     <li><a href="https://twitter.com/yourprofile" target="_blank" class="social-icon" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a></li> 
                     <li><a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a></li> 
@@ -76,9 +86,17 @@
         </div> 
     </footer>
 
-    
-    <script src="/js/main.js">
 
+
+    <script src="/js/main.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
     </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
+
+
+

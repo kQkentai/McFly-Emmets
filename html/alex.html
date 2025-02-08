@@ -2,418 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE-edge" /> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Website</title>
     <link rel="stylesheet" href="/css/alex.css" />
-    <!-- <script src="https://kit.fontane" -->
   </head>
   <body>
     <header class="header">
       <a href="#">
-        <img src="assets/img/news-logo.png" alt="logo" class="logo" />
+        <img src="/pictures/news-logo.png" alt="logo" class="logo" />
       </a>
 
-      <nav>
+      <!-- <nav> -->
+      <nav data-opened="false" class="navigation">
+        <button class="burger_close">X</button>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#sport-news">Sport</a></li>
-          <li><a href="#travel-news">Travel</a></li>
-          <li><a href="#future-news">Future</a></li>
+          <li><a href="/html/index.html">Home</a></li>
+          <li><a href="#sport-news">Sport News</a></li>
         </ul>
       </nav>
+      <button class="burger_open">&#8801;</button>
     </header>
-
-    <div class="home-section-news">
-      <div class="left">
-        <div class="title-text">
-          <h2>Breaking News</h2>
-        </div>
-        <div class="image">
-          <img src="assets/img/breaking_news_bg.jpg" alt="car" />
-        </div>
-        <div class="content">
-          <div class="title">
-            <h3>
-              <a href="https://4k-tuning.ru/top-best-supercars/" target="_blank"
-                >Топ-10 самых лучших суперкаров всех времен.</a
-              >
-            </h3>
-            <!-- <h3><a href="https://www.autocar.co.uk/car-news/best-cars/top-10-best-sports-cars"></a></h3> -->
-          </div>
-          <div class="descr">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, fuga!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="right">
-        <div class="title-text">
-          <h2>Top News</h2>
-        </div>
-        <div class="top-news">
-          <div class="news">
-            <div class="img">
-              <img src="assets/img/train_future.jpg" alt="train" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eaque, velit.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news">
-            <div class="img">
-              <img src="assets/img/journey.jpg" alt="journey" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eaque, velit.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news">
-            <div class="img">
-              <img src="assets/img/boxing.jpg" alt="boxing" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eaque, velit.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news">
-            <div class="img">
-              <img src="assets/img/robot.jpg" alt="robot" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eaque, velit.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news">
-            <div class="img">
-              <img src="assets/img/fireworks.jpg" alt="fireworks" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eaque, velit.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news">
-            <div class="img">
-              <img src="assets/img/palace.jpg" alt="palace" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eaque, velit.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <section class="section">
       <div class="news" id="sport-news">
         <div class="title">
           <h3>
-            <a href="https://www.bbc.com/sport" target="_blank">Sport News</a>
+            <a href="#">Sport News</a>
           </h3>
         </div>
         <div class="news-block">
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/boxing.jpg" alt="boxing" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img
-                src="assets/img/american_football.jpg"
-                alt="american_football"
-              />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/tennis.jpg" alt="tennis" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/table-tennis.jpg" alt="table-tennis" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/top_news_basketball.jpg" alt="basketball" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="line"></div>
-    </section>
-
-    <section class="section">
-      <div class="news" id="travel-news">
-        <div class="title">
-          <h3>
-            <a href="https://www.bbc.com/travel" target="_blank">Travel News</a>
-          </h3>
-        </div>
-        <div class="news-block">
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/journey.jpg" alt="journey" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/fireworks.jpg" alt="fireworks" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/palace.jpg" alt="palace" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/lisbon.jpg" alt="lisbon" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/camel.jpg" alt="camel" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="line"></div>
-    </section>
-
-    <section class="section">
-      <div class="news" id="future-news">
-        <div class="title">
-          <h3>
-            <a href="https://www.bbc.com/future" target="_blank">Future News</a>
-          </h3>
-        </div>
-        <div class="news-block">
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/astronaut.jpg" alt="astronaut" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/robot.jpg" alt="robot" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/launch.jpg" alt="launch" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/train_future.jpg" alt="train_future" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="news-img">
-            <div class="img">
-              <img src="assets/img/ferrari.jpg" alt="ferrari" />
-            </div>
-            <div class="text">
-              <div class="title">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, magni!
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="news-img"></div>
         </div>
       </div>
     </section>
 
-    <div class="footer">
-      <div class="box">
-        <div class="explore">
-          <h3>Explore the News</h3>
-          <h4>Sport</h4>
-          <h4>Travel</h4>
-          <h4>Future</h4>
-        </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__block">
+            <h4 class="footer__title">Location</h4>
+            <address class="footer__address">
+              <div>Kazakhstan</div>
+              <div>Kokshetau city Akana-Sere 100</div>
+            </address>
+          </div>
 
-        <div class="contacts">
-          <h3>Contacts Us</h3>
-          <h4>Phone: +777-534-534</h4>
-          <h4>Email: news@info.com</h4>
-          <h4>Address: Kazakhstan Kokshetau st. Akana-Sere 100</h4>
-        </div>
+          <div class="footer__block">
+            <h4 class="footer__title">share with love</h4>
+            <div class="social social--footer">
+              <a
+                class="social__item"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img src="/pictures/facebook1.svg" height="25" alt="" />
+              </a>
+              <a class="social__item" href="https://x.com/" target="_blank">
+                <img src="/pictures/twitter1.svg" height="25" alt="" />
+              </a>
+              <a class="social__item" href="https://vk.com" target="_blank">
+                <img src="/pictures/vk1.svg" height="25" alt="" />
+              </a>
+            </div>
+          </div>
 
-        <div class="social-icons"></div>
+          <div class="footer__block">
+            <h4 class="footer__title">Sport news page</h4>
+            <div class="footer__text">
+              <p>
+                “Movement is life, and life is movement” Ancient Greek
+                philosopher Aristotle It is known that people who lead a
+                sedentary lifestyle are more likely to get sick and, on average,
+                live less than those who are active and play sports.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /.footer__inner -->
       </div>
-    </div>
+      <!-- /.container -->
 
-
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright__text">
+            <span>2025 &copy; Sport News Page</span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="/js/alex.js"></script>
   </body>

@@ -1,4 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".navigation");
+  const closeBtn = document.querySelector(".burger_close");
+  const openBtn = document.querySelector(".burger_open");
+
+  // Открываем меню
+  openBtn.addEventListener("click", () => {
+    nav.setAttribute("data-opened", "true");
+  });
+
+  // Закрываем меню
+  closeBtn.addEventListener("click", () => {
+    nav.setAttribute("data-opened", "false");
+  });
+
+  // Закрываем меню при клике вне него
+  document.addEventListener("click", (event) => {
+    if (!nav.contains(event.target) && !openBtn.contains(event.target)) {
+      nav.setAttribute("data-opened", "false");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   const sportNewsContainer = document.querySelector("#sport-news .news-block");
 
   const API_KEY = "e008f898cf954fc8af97a6aa06da6ab9";
@@ -20,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function displaySportNews(articles) {
-    sportNewsContainer.innerHTML = ""; 
+    sportNewsContainer.innerHTML = "";
 
     articles.forEach((article) => {
       const newsItem = document.createElement("div");
@@ -28,7 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       newsItem.innerHTML = `
         <div class="img">
-          <img src="${article.urlToImage || 'assets/img/placeholder.jpg'}" alt="${article.title}" />
+          <img src="${
+            article.urlToImage || "assets/img/placeholder.jpg"
+          }" alt="${article.title}" />
         </div>
         <div class="text">
           <div class="title">
@@ -44,4 +69,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   fetchSportNews();
+});
+
+function checkScroll() {
+  if (scrollPos > introH) {
+    header.addClass("fixed");
+  } else {
+    header.removeClass("fixed");
+  }
+}
+/* Smooth Scroll */
+$("[data-scroll]").on("click", function (event) {
+  event.preventDefault();
+
+  let elementId = $(this).data("scroll");
+  let elementOffset = $(elementId).offset().top;
+
+  $("html, body").animate({
+    scrollTop: elementOffset - 70,
+  });
+
+  console.log(elementOffset);
 });

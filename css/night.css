@@ -1,0 +1,24 @@
+:root{
+  --main-color:#4b0243;
+  --btn-color: #ff6e40;
+  --bg-color: #090909;
+  --color: #888686;
+  --bg2-color:#0b0b0b;
+  --color2:#4b0243;
+  --txt-color:#555;
+  --txt2-color:#fff;
+  --footer-txt-color:#f39c12;
+  --btn-hover-color:#ff4e20;
+}
+
+.switcher__radio {
+  filter: invert(1);
+}
+
+.switcher__radio:checked {
+  filter: invert(0);
+}
+
+.switcher__status {
+  filter: invert(1);
+}
